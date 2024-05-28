@@ -1,0 +1,392 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+html:focus-within {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Poppins;
+    font-size: 1.6rem;
+}
+
+/* ========================== Common ========================== */
+
+.header {
+    background-color: #fffcf4;
+}
+
+.main-content {
+    width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: calc(100% - 48px);
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn {
+    width: 118px;
+    height: 50px;
+    border-radius: 2.5rem;
+    background: #171100;
+    line-height: 50px;
+    text-align: center;
+    font-size: 1.4rem;
+    color: #fff;
+}
+
+/* ========================= Header ============================ */
+
+.header.fixed {
+    position: sticky;
+    top: -20px;
+    z-index: 1;
+}
+
+.header .body {
+    display: flex;
+    padding-top: 28px;
+    padding-bottom: 8px;
+    align-items: center;
+}
+
+.header .list {
+    display: flex;
+    margin-left: auto;
+    margin-right: 42px;
+}
+
+.header .list li a {
+    color: #5f5b53;
+    font-size: 1.6rem;
+    line-height: 1.75;
+    padding: 8px 21px;
+}
+
+.header .btn {
+    display: inline-block;
+    width: 144px;
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+.list li a:hover,
+.header .list .active a {
+    color: #171100;
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+.list .active {
+    position: relative;
+}
+
+.header .list .active::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 1.2rem;
+    height: 0.2rem;
+    border-radius: 0.1rem;
+    background: #171100;
+    left: 22px;
+    bottom: 2px;
+}
+
+/* ========================= Content ============================ */
+
+.content {
+    background-color: #fffcf4;
+}
+
+.content .main-content {
+    padding-top: 56px;
+    display: flex;
+}
+
+.project {
+    display: flex;
+    align-items: center;
+    margin-left: 24px;
+    margin-top: 18px;
+}
+
+.in-project .desc {
+    color: #5f5b53;
+    font-size: 1.4rem;
+    line-height: 2.6rem; /* 185.714% */
+    margin-left: 16px;
+}
+
+.in-project .title {
+    color: #171100;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 3rem; /* 166.667% */
+    margin-left: 16px;
+}
+
+.circle {
+    width: 4.8rem;
+    height: 4.8rem;
+    background-color: #fff9e8;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.list-summary .project:nth-child(2) .circle {
+    background-color: #fcefff;
+}
+
+.list-summary .project:nth-child(3) .circle {
+    background-color: #ebeaff;
+}
+
+.content .img {
+    position: relative;
+    width: 47%;
+    padding-bottom: 65px;
+}
+
+.list-summary {
+    position: absolute;
+    left: 300px;
+    top: 393px;
+    width: 27rem;
+    height: 24.4rem;
+    background-color: #fff;
+    border-radius: 1.2rem;
+    box-shadow: 0px 16px 32px 0px rgba(0, 0, 0, 0.05);
+}
+
+.hero-right {
+    width: 52%;
+    padding: 56px 0 0 150px;
+}
+
+.hero-right .title {
+    width: 47rem;
+    color: #171100;
+    font-family: Sen;
+    font-size: 5.8rem;
+    font-weight: 700;
+    line-height: 6.8rem; /* 117.241% */
+    letter-spacing: -0.116rem;
+}
+
+.hero-right .desc {
+    margin-top: 22px;
+    color: #5f5b53;
+    font-size: 1.8rem;
+    line-height: 3rem; /* 166.667% */
+}
+
+.hero-right .action {
+    margin-top: 38px;
+    display: flex;
+}
+
+.hero-right .action .btn {
+    display: inline-block;
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 6.4rem; /* 166.667% */
+    width: 18rem;
+    height: 6.4rem;
+    border-radius: 3.2rem;
+    background: #ffb900;
+}
+
+.w-video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 28px;
+}
+
+.watch-video {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+    color: #171100;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 3rem; /* 166.667% */
+}
+
+.hero-right .recent {
+    margin-top: 30px;
+    color: #5f5b53;
+    font-size: 1.8rem;
+    line-height: 3rem; /* 166.667% */
+}
+
+.hero-right .quantity {
+    margin-top: 8px;
+    display: flex;
+}
+
+.hero-right .quantity .students {
+    color: #5f5b53;
+    font-size: 1.8rem;
+    line-height: 3rem;
+}
+
+.students strong {
+    color: #171100;
+    font-family: Sen;
+    font-size: 4.4rem;
+    font-weight: 700;
+    line-height: 5.4rem; /* 122.727% */
+    padding-right: 4px;
+}
+
+.hero-right .quantity .courses {
+    margin-left: 28px;
+    color: #5f5b53;
+    font-size: 1.8rem;
+    line-height: 3rem;
+}
+
+.courses strong {
+    color: #171100;
+    font-family: Sen;
+    font-size: 4.4rem;
+    font-weight: 700;
+    line-height: 5.4rem; /* 122.727% */
+    padding-right: 4px;
+}
+
+/* =================================== Courses ======================================== */
+.courses .title {
+    margin-top: 200px;
+    color: #171100;
+    font-family: Sen;
+    font-size: 3.8rem;
+    font-weight: 700;
+    line-height: 4.8rem; /* 126.316% */
+    letter-spacing: -0.076rem;
+}
+
+.courses .desc {
+    display: flex;
+}
+
+.courses .desc p {
+    color: #5f5b53;
+    font-size: 1.8rem;
+    line-height: 3rem; /* 166.667% */
+    width: 45.8rem;
+    margin-top: 16px;
+}
+
+.courses .desc .arrow {
+    margin-left: auto;
+    text-align: center;
+    line-height: 38px;
+}
+
+.courses .arrow a {
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    border-radius: 50%;
+    border: solid orange 2px;
+    color: orange;
+}
+
+.courses .arrow a:nth-child(2) {
+    margin-left: 18px;
+}
+
+.courses .arrow a:hover {
+    background: orange;
+    color: #fff;
+}
+
+.courses .courses-list {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 55px;
+}
+
+.courses-list .product {
+    width: 37rem;
+    height: 46.6rem;
+    border-radius: 1.2rem;
+    background: #fff;
+    box-shadow: 0px 18px 36px 0px rgba(0, 0, 0, 0.05);
+}
+
+.courses-list .product .picture img {
+    width: 37rem;
+    height: 27.8rem;
+    object-fit: cover;
+    border-radius: 1.2rem 1.2rem 0rem 0rem;
+}
+
+.courses-list .product .title-rate {
+    display: flex;
+    margin: 16px 22px 6px;
+    align-items: center;
+}
+.product .title-rate a {
+    color: #171100;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 3rem; /* 166.667% */
+}
+
+.product .title-rate img {
+    margin-left: auto;
+    margin-right: 6px;
+}
+
+.product .title-rate p {
+    color: #fea31b;
+}
+
+.product .details {
+    color: #5f5b53;
+    font-size: 1.4rem;
+    line-height: 2.6rem; /* 185.714% */
+    margin: 6px 22px 12px;
+}
+
+.product .buy {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 22px 32px;
+}
+
+.product .buy .price {
+    color: #171100;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 3rem; /* 166.667% */
+}
+
+.product .buy .btn {
+    color: #fff;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.product .buy .btn:hover {
+    background-color: #ffb900;
+    transition: 0.4s;
+}
